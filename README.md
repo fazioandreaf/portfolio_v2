@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Andrea Fazio - CV Portfolio
 
-## Getting Started
+A modern, responsive CV portfolio built with Next.js 15, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🎨 Design System
 
+### Colors
+- **Background**: `#0E0E0E` (Dark background for high contrast)
+- **Primary**: `#00FF85` (Bright green accent)
+- **Primary Dark**: `#00CC68` (Dark green for hover/focus)
+- **Text Primary**: `#FFFFFF` (White text)
+- **Text Secondary**: `#B3B3B3` (Gray text)
+- **Divider/Borders**: `#1C1C1C` (Dark gray)
+
+### Typography
+- **Font**: Inter (Google Fonts)
+- **Weights**: 400 (Regular), 700 (Bold)
+- **Spacing**: Generous spacing for readability
+
+### Layout
+- **Desktop**: Max-width 1200px, 12-column grid, 24px gutters
+- **Mobile**: Stack vertical, 20px padding, 48px section spacing
+
+## 🚀 Features
+
+- ✅ Responsive design (Desktop 1440px, Mobile 390px)
+- ✅ Dark theme with green accent colors
+- ✅ Modern hero section with CTA buttons
+- ✅ Skills grid with hover effects
+- ✅ Experience timeline
+- ✅ Featured projects with tech stack
+- ✅ Contact section with social links
+- ✅ Smooth animations and transitions
+- ✅ SEO optimized
+- ✅ TypeScript support
+- ✅ Tailwind CSS styling
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Fonts**: Inter (Google Fonts)
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd portfolio_v2
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 📄 Sections
 
-To learn more about Next.js, take a look at the following resources:
+1. **Hero Section**: Name, title, description, and CTA buttons
+2. **Skills**: Grid of technical skills with icons
+3. **Experience**: Timeline of professional experience
+4. **Projects**: Featured projects with tech stack
+5. **Contact**: Social links and contact information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Colors
+Update the color palette in `tailwind.config.js` and `src/app/globals.css`.
 
-## Deploy on Vercel
+### Content
+Modify the content in `src/app/page.tsx`:
+- Update personal information in the hero section
+- Add/remove skills in the `skills` array
+- Update experience in the `experiences` array
+- Modify projects in the `projects` array
+- Update contact information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Styling
+All styling is done with Tailwind CSS classes. The design system is defined in:
+- `src/app/globals.css` - CSS variables and custom styles
+- `tailwind.config.js` - Tailwind configuration and custom colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsive Design
+
+The portfolio is fully responsive with breakpoints:
+- **Mobile**: 390px and up
+- **Tablet**: 768px and up
+- **Desktop**: 1024px and up
+- **Large Desktop**: 1440px and up
+
+## 🚀 Deployment
+
+The project can be deployed to Vercel, Netlify, or any other hosting platform that supports Next.js.
+
+```bash
+npm run build
+npm start
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
