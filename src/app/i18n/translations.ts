@@ -2,8 +2,8 @@ export const translations = {
   it: {
     hero: {
       title: "Andrea Fazio",
-      subtitle: "Senior Frontend Developer & Full Stack Engineer",
-      description: "Sviluppatore fullstack appassionato con esperienza in e-commerce e settore della moda di lusso. Specializzato in React, TypeScript e Progressive Web Apps (PWA). Basato a Milano, Italia con 476+ connessioni LinkedIn e un forte focus su apprendimento continuo e innovazione. Esperienza in Salesforce Commerce Cloud, architetture headless e tecnologie web moderne. Sempre desideroso di imparare nuove tecnologie e contribuire a progetti significativi nel settore della moda e del lusso.",
+      subtitle: "Frontend Developer & Full Stack Engineer",
+      description: "Sviluppatore fullstack appassionato con esperienza in e-commerce e settore della moda di lusso. Specializzato in React, TypeScript e Progressive Web Apps (PWA). Esperienza in Salesforce Commerce Cloud, architetture headless e tecnologie web moderne. Sempre desideroso di imparare nuove tecnologie e contribuire a progetti significativi nel settore della moda e del lusso.",
       downloadCV: "Scarica CV",
       contactMe: "Contattami"
     },
@@ -53,12 +53,14 @@ export const translations = {
         description: 'Parte del progetto di migrazione di LN-CC alla nuova architettura PWA. Architettura headless utilizzando Salesforce Commerce API (SCAPI) e React. Implementato Redux per la gestione dei dati, TypeScript per la qualità del codice e Contentful CMS per la gestione dei contenuti. Raggiunti punteggi PageSpeed Insights di 92 su accessibilità e 92 su SEO.',
         tech: ['React', 'Redux', 'TypeScript', 'Salesforce Commerce API', 'Contentful CMS', 'PWA'],
         link: 'https://fazioandrea.vercel.app/about-me',
+        videoLink: 'https://www.youtube.com/watch?v=CL_DMABCj58&t=1s',
       },
       {
         title: 'Casadei PWA',
         description: 'Sviluppo di Progressive Web App per il brand di moda di lusso Casadei. Costruita con tecnologie web moderne focalizzandosi su performance e user experience per l\'industria della moda di lusso.',
         tech: ['React', 'PWA', 'TypeScript', 'E-commerce di Lusso', 'Ottimizzazione Performance'],
         link: 'https://fazioandrea.vercel.app/about-me',
+        videoLink: 'https://www.youtube.com/watch?v=t1azU5maJ6I',
       },
       {
         title: 'Maliparmi PWA',
@@ -79,8 +81,8 @@ export const translations = {
   en: {
     hero: {
       title: "Andrea Fazio",
-      subtitle: "Senior Frontend Developer & Full Stack Engineer",
-      description: "Passionate fullstack developer with expertise in e-commerce and luxury fashion industry. Specialized in React, TypeScript, and Progressive Web Apps (PWA). Based in Milan, Italy with 476+ LinkedIn connections and a strong focus on continuous learning and innovation. Experience in Salesforce Commerce Cloud, headless architectures, and modern web technologies. Always eager to learn new technologies and contribute to meaningful projects in the fashion and luxury sector.",
+      subtitle: "Frontend Developer & Full Stack Engineer",
+      description: "Passionate fullstack developer with expertise in e-commerce and luxury fashion industry. Specialized in React, TypeScript, and Progressive Web Apps (PWA). Experience in Salesforce Commerce Cloud, headless architectures, and modern web technologies. Always eager to learn new technologies and contribute to meaningful projects in the fashion and luxury sector.",
       downloadCV: "Download CV",
       contactMe: "Contact Me"
     },
@@ -130,12 +132,14 @@ export const translations = {
         description: 'Part of LN-CC\'s migration project to new PWA architecture. Headless architecture using Salesforce Commerce API (SCAPI) and React. Implemented Redux for data management, TypeScript for code quality, and Contentful CMS for content management. Achieved PageSpeed Insights scores of 92 on accessibility and 92 on SEO.',
         tech: ['React', 'Redux', 'TypeScript', 'Salesforce Commerce API', 'Contentful CMS', 'PWA'],
         link: 'https://fazioandrea.vercel.app/about-me',
+        videoLink: 'https://www.youtube.com/watch?v=CL_DMABCj58&t=1s',
       },
       {
         title: 'Casadei PWA',
         description: 'Progressive Web App development for Casadei luxury fashion brand. Built with modern web technologies focusing on performance and user experience for the luxury fashion industry.',
         tech: ['React', 'PWA', 'TypeScript', 'Luxury E-commerce', 'Performance Optimization'],
         link: 'https://fazioandrea.vercel.app/about-me',
+        videoLink: 'https://www.youtube.com/watch?v=t1azU5maJ6I',
       },
       {
         title: 'Maliparmi PWA',
@@ -155,5 +159,30 @@ export const translations = {
   }
 } as const;
 
+
+
+type Project = {
+  readonly title: string;
+  readonly description: string;
+  readonly tech: readonly string[];
+  readonly link: string;
+  readonly videoLink?: string;
+};
+
 export type Language = 'it' | 'en';
 export type TranslationKey = keyof typeof translations.it;
+
+
+
+
+/* add javascript @https://www.svgrepo.com/svg/303206/javascript-logo
+
+salesforce @https://www.svgrepo.com/svg/452347/salesforce
+
+react @https://www.svgrepo.com/svg/503536/react
+
+contentful @https://www.svgrepo.com/svg/330217/contentful
+
+laravel @https://www.svgrepo.com/svg/473693/laravel
+
+redux @https://www.svgrepo.com/svg/394395/redux */

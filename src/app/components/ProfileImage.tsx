@@ -17,6 +17,7 @@ export default function ProfileImage() {
             width={320}
             height={320}
             className="w-full h-full object-cover rounded-full"
+            style={{ marginInline: '50px' }}
             priority
             onError={() => setImageError(true)}
           />
